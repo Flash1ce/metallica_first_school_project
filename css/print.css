@@ -1,0 +1,12 @@
+a{
+    color: black !important;
+}
+.printNone{
+    display: none !important;
+}
+.hauttexte{
+    display: none !important;
+}
+h1{
+    display: show !important;
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Metallica (Site non officiel)</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link media="screen" rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link media="print" rel="stylesheet" href="css/print.css">
+</head>
+
+<body id="haut">
+
+  <header>
+    <div class="divNav hideMobile">
+      <nav class="navPrincipal printNone">
+        <div>
+          <ul>
+            <li><a href="discographie.html">Discographie</a></li>
+            <li><a href="evenements-marquants.html">Évènements marquants</a></li>
+            <li><a href="photos-membres.html">Les membres</a></li>
+            <li><a href="spectacles.html">Spectacles et tournées</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navSecondaire printNone">
+        <div>
+          <ul>
+            <li><a href="plan-site.html">Plan</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="lien-externe.html">Liens externes</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="nous-joindre.html">Nous-joindre</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="none">Metallica</h1>
+      <a href="index.html" class="printNone"><img src="images/nom/metallica.png" alt="metallica" /></a>
+    </div>
+
+    <div class="menuMobile printNone">
+      <div class="menuIcon">
+        <div id="iconNom">
+          <a href="index.html" class="printNone"><img src="images/nom/metallica.png" /></a>
+        </div>
+        <div id="iconMenu">
+          <img src="images/menuEmberger/menu.png" />
+        </div>
+      </div>
+      <div id="menu">
+        <nav>
+          <ul>
+            <li><a href="discographie.html">Discographie</a></li>
+            <li><a href="evenements-marquants.html">Évènements marquants</a></li>
+            <li><a href="photos-membres.html">Les membres</a></li>
+            <li><a href="spectacles.html">Spectacles et tournées</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="plan-site.html">Plan</a></li>
+            <li><a href="sources.html">Sources</a></li>
+            <li><a href="lien-externe.html">Liens externes</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="nous-joindre.html">Nous-joindre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container flex">
+    <h2>Nous-joindre</h2>
+    <form method="POST" action="mailto:antoinebedard@edu.cegepgarneau.ca" enctype="text/plain">
+      <div class="champ">
+        <fieldset class="infP">
+          <legend>Information perssonels</legend>
+
+          <label for="nom" class="blockChamps">Nom<span>*</span></label>
+          <input id="nom" type="text" name="nom" required>
+
+          <label for="prenom" class="blockChamps">Prénom<span>*</span></label>
+          <input id="prenom" type="text" name="prenom" required>
+
+          <label for="mail" class="blockChamps">Courriel<span>*</span></label>
+          <input id="mail" type="email" name="courriel" placeholder="abc@mail.com" required>
+
+          <label for="pays" class="blockChamps">Pays</label>
+          <select name="pays" id="pays">
+            <option value="can" selected>Canada</option>
+            <option value="fr">France</option>
+            <option value="jap">Japon</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="autres">
+          <legend>autres</legend>
+
+          <label class="blockChamps">Le sujet du message</label>
+          <input id="comm" type="radio" name="sujetMessage" value="commentaire" checked>
+          <label for="comm">Commentaire</label>
+
+          <input id="q" type="radio" name="sujetMessage" value="question">
+          <label for="q">Question</label>
+
+          <input id="prob" type="radio" name="sujetMessage" value="probleme">
+          <label for="prob">Problème</label>
+
+          <div class="messageF">
+            <label for="msg" class="blockChamps">Votre message</label>
+            <textarea id="msg" name="message" rows="7" cols="40" placeholder="Ecrivez un message!"></textarea>
+          </div>
+          <div class="dispBlock margB">
+            <input id="info" type="checkbox" name="infolettre">
+            <label for="info"> Je veux m’abonner à l’infolettre</label>
+          </div>
+          <div class="dispBlock margB">
+            <input id="pub" type="checkbox" name="publicités">
+            <label for="pub">Je veux recevoir des publicités</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="envoyer">
+          <label id="env">Envoyer le formulaire</label>
+          <input id="env" type="submit" name="Envoyer" value="Envoyer">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <section class="footer">
+        <h3>Info suplémentaires</h3>
+        <h3>Nous contacter</h3>
+        <p>Antoine Bédard <a href="mailto:antoinebedard@edu.cegepgarneau.ca">Contactez-moi!</a>
+          Melina Hotte <a href="mailto:melina.hotte@edu.cegepgarneau.ca">Contactez-moi!</a>
+        </p>
+      </section>
+    </div>
+  </footer>
+
+</body>
+
+</html>
